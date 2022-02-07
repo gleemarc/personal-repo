@@ -1,29 +1,21 @@
 @import url(reset.css);
-*{
-    box-sizing: border-box;
-}
-h1{
-    font-size: 36px;
-}
-h2{
-    font-size: 24px;
-}
-h3{
-    font-size: 16px;
-}
-
 /* --標題與說明文字-- */
 .title{
-    margin-top: 100px;
-    margin-left: 150px;
+    /* margin-top: 100px;
+    margin-left: 150px; */
+    background-color: #FFD45D;
+    padding: 100px 0 0 150px;
 }
 
 .title h1{
     margin-bottom: 40px;
+    font-weight: bold;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px rgba(240, 132, 0, .3);
 }
 
 .title h2{
-    margin-bottom: 100px;
+    padding-bottom: 100px; 
 }
 
 /* --經典弛放-- */
@@ -36,6 +28,8 @@ h3{
     position: relative;
     display: inline-block;
     margin-bottom: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px rgba(240, 132, 0, .3);
 }
 
 .classic h1:after{
@@ -88,6 +82,8 @@ h3{
     position: relative;
     display: inline-block;
     margin-bottom: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px rgba(240, 132, 0, .3);
 }
 
 .rock h1:after{

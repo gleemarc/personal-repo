@@ -1,27 +1,19 @@
-@import url(./reset.css);
-*{
-    box-sizing: border-box;
-}
-h1{
-    font-size: 36px;
-}
-h2{
-    font-size: 24px;
-}
 /*--輪播圖--*/
+.slider, .slider_point{
+    background-color: rgba(255, 212, 93, .7);
+}
+
 .slider{
-    margin-top: 80px;
+    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid purple; */
 }
 
-.slider a {
+.slider .la, .slider .ra {
     display: block;
     width: 100px;
     height: 100px;
-    /* background-color: grey; */
 }
 
 .slider .la:before{
@@ -59,31 +51,32 @@ h2{
     order: 3;
 }
 
-.slider img{
+.slider .middle{
     order: 2;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
+    font-size: 0;
 }
-
-
 
 
 .slider_point{
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .slider_point a{
     /* border: 1px solid red; */
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     margin-right: 31px;
     margin-top: 20px;
-    background-color: #404040;
+    background-color: #000;
     border-radius: 50%;
 }
 
 .slider_point :first-child{
-    background-color: #F08400;
+    background-color: #4165AF;
 }
 
 
@@ -99,6 +92,8 @@ h2{
     /* outline: 1px solid pink; */
     display: inline-block;
     margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px rgba(240, 132, 0, .3);
 }
 
 .rec h1:after{
@@ -126,11 +121,6 @@ h2{
     /* border: 1px solid blue; */
     flex-basis: 301px;
 }
-/*--可能會需要再調整--*/
-/* .rec ul li:not(:nth-child(3n)){
-    margin-right: 240px;
-} */
-  
 
 .rec ul li img{
     width: 100%;
@@ -161,6 +151,8 @@ h2{
     position: relative;
     display: inline-block;
     margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px rgba(240, 132, 0, .3);
 }
 
 .intvw h1:after{
@@ -203,6 +195,7 @@ h2{
     margin-bottom: 40px;
     line-height: 24px;
     align-self: center;
+    color: #000;
 }
 
 .more_btn{
