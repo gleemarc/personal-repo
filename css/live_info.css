@@ -1,0 +1,163 @@
+@import url(reset.css);
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 16px;
+}
+
+/* --共同margin設定-- */
+.live_list, h1{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+/* --h1-- */
+h1{
+    position: relative;
+    display: inline-block;
+}
+
+h1:after{
+    content: "";
+    width: 300px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 160px;
+    margin: auto;
+}
+
+/* --nav/info flex專區-- */
+.live_list{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.live_list .nav{
+    flex-basis: 227px;
+    /* outline: 1px solid red; */
+}
+
+.live_list .info{
+    flex-basis: 915px;
+    /* outline: 1px solid pink; */
+}
+
+/* --活動列表左半邊-- */
+.live_list .nav h2:first-child{
+    /* outline: 1px solid red; */
+    margin-bottom: 30px;
+}
+
+.live_list .nav .search{
+    position: relative;
+    /* display: inline-block; */
+}
+
+.live_list .nav .search:after{
+    content: "";
+    width: 225px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.live_list .nav .area{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.live_list .nav .area_type{
+    display: flex;
+    flex-wrap: wrap;
+    width: 225px;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.live_list .nav .area_type li{
+    width: 100%;
+    flex-basis: 75px;
+}
+
+.live_list .nav .date{
+    margin-top: 30px;
+}
+
+.live_list .nav .re_act{
+    margin-top: 30px;
+}
+
+/* --活動列表右半邊-- */
+.info{
+
+}
+
+.info li{
+    display: flex;
+    width: 915px;
+}
+
+.info li:not(:first-child){
+    margin: 40px 0;
+}
+
+.info img{
+    flex-basis: 325px;
+    width: 100%;
+    height: 206px;
+    /* padding: 10px; */
+}
+
+.info .act_date{
+    flex-basis: 100px;
+    text-align: center;
+    align-self: center;
+}
+.info .act_info{
+    flex-basis: 430px;
+}
+
+.info .act_date, .info .act_info{
+    line-height: 1.2;
+}
+.info h3{
+    text-align: right;
+}
+
+
+
+
+.more_btn{
+    position: relative;
+    /* border: 1px solid pink; */
+    float: right;
+    margin: 40px 50px 100px auto;
+    overflow: hidden;
+    width: 90px;
+}
+.more_btn:after{
+    content: "";
+    width: 0;
+    height: 0;
+    /* background-color: yellow; */
+    border: 8px solid #000;
+    border-color: transparent transparent transparent #000;
+    float: left;
+    position: absolute;
+    top: 4px;
+    left: 80px;
+}

@@ -1,0 +1,229 @@
+@import url(./reset.css);
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+/*--輪播圖--*/
+.slider{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid purple; */
+}
+
+.slider a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    /* background-color: grey; */
+}
+
+.slider .la:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 20px solid rgba(0, 0, 0, 1);
+    border-color: transparent rgba(0, 0, 0, 1) transparent transparent;
+    margin-left: 20px;
+    margin-top: 30px;
+    /* float: left; */
+}
+
+.slider .ra:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 20px solid rgba(0, 0, 0, 1);
+    border-color: transparent  transparent transparent rgba(0, 0, 0, 1);
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.slider .la{
+    overflow: hidden;
+    flex-shrink: 0;
+    order: 1;
+}
+
+.slider .ra{
+    overflow: hidden;
+    flex-shrink: 0;
+    order: 3;
+}
+
+.slider img{
+    order: 2;
+}
+
+
+
+
+.slider_point{
+    display: flex;
+    justify-content: center;
+}
+
+.slider_point a{
+    /* border: 1px solid red; */
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 31px;
+    margin-top: 20px;
+    background-color: #404040;
+    border-radius: 50%;
+}
+
+.slider_point :first-child{
+    background-color: #F08400;
+}
+
+
+
+/* --精選推薦-- */
+.rec{
+    margin-left: 120px;
+    margin-top: 90px;
+}
+
+.rec h1{
+    position: relative;
+    /* outline: 1px solid pink; */
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.rec h1:after{
+    content: "";
+    background: #000;
+    width: 300px;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 160px;
+    margin: auto;
+}
+
+.rec ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    /* border: 1px solid plum; */
+}
+
+.rec ul li{
+    /* border: 1px solid blue; */
+    flex-basis: 301px;
+}
+/*--可能會需要再調整--*/
+/* .rec ul li:not(:nth-child(3n)){
+    margin-right: 240px;
+} */
+  
+
+.rec ul li img{
+    width: 100%;
+    margin-bottom: 55px;
+    transition: all .5s;
+    /* border: 1px solid yellow; */
+}
+
+.rec ul li h2{
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rec ul li img:hover{
+    transform: scale(1.3);
+}
+
+
+/* 媒體專訪 */
+.intvw{
+    margin-left: 120px;
+    margin-top: 90px;
+    clear: both;
+}
+
+.intvw h1{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.intvw h1:after{
+    content: "";
+    background: #000;
+    width: 300px;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 160px;
+    margin: auto;
+}
+
+.intvw ul{
+    /* border: 1px solid springgreen; */
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.intvw a{
+    text-decoration: none;
+    flex-basis: 340px;
+    /* border: 1px solid pink; */
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
+.intvw img{
+    width: 100%;
+    margin-bottom: 40px;
+    /* border: 1px solid rgb(40, 25, 175); */
+}
+
+.intvw ul a h2{
+    /* border: 1px solid brown; */
+    margin-bottom: 40px;
+    line-height: 24px;
+    align-self: center;
+}
+
+.more_btn{
+    position: relative;
+    /* border: 1px solid pink; */
+    float: right;
+    margin: 40px 50px 100px auto;
+    overflow: hidden;
+    width: 90px;
+}
+
+.more_btn:after{
+    content: "";
+    width: 0;
+    height: 0;
+    /* background-color: yellow; */
+    border: 8px solid #000;
+    border-color: transparent transparent transparent #000;
+    float: left;
+    position: absolute;
+    top: 4px;
+    left: 80px;
+}
+

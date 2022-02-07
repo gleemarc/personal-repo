@@ -1,0 +1,143 @@
+@import url(reset.css);
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+
+/* --專輯發行-- */
+.new_album{
+    margin-top: 90px;
+    margin-left: 120px;
+}
+
+.new_album h1{
+    /* outline: 1px solid red; */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.new_album h1:after{
+    content: "";
+    width: 300px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 160px;
+    margin: auto;
+}
+
+.new_album ul{
+    /* border: 1px solid green; */
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.new_album ul li{
+    /* outline: 1px solid red; */
+    flex-basis: 301px;
+}
+
+.new_album ul li img{
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.new_album ul li h2{
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* --新歌發行-- */
+.new_song{
+    margin-top: 90px;
+    margin-left: 120px;
+    /* padding: 10px; */
+}
+
+.new_song h1{
+    position: relative;
+    display: inline-block;
+}
+
+.new_song h1:after{
+    content: "";
+    width: 300px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 160px;
+    margin: auto;
+}
+
+.new_song table{
+    width: 1200px;
+    /* margin: 0 auto; */
+    /* border: 1px solid #000; */
+    border-collapse: collapse;
+    /* border: none; */
+}
+
+.new_song tr{}
+
+.new_song td{
+    /* border: 1px solid grey; */
+    height: 100px;
+    vertical-align: middle;
+}
+
+.new_song table tr td img{
+    width: 100px;
+}
+
+.new_song .pic{
+    width: 150px;
+    height: 200px;
+    font-size: 0;
+}
+
+.new_song .name{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.new_song .icon{
+    font-size: 50px;
+}
+
+
+.more_btn{
+    position: relative;
+    /* border: 1px solid pink; */
+    float: right;
+    margin: 40px 50px 100px auto;
+    overflow: hidden;
+    width: 90px;
+}
+.more_btn:after{
+    content: "";
+    width: 0;
+    height: 0;
+    /* background-color: yellow; */
+    border: 8px solid #000;
+    border-color: transparent transparent transparent #000;
+    float: left;
+    position: absolute;
+    top: 4px;
+    left: 80px;
+}

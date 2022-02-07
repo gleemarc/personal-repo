@@ -1,0 +1,83 @@
+@import url(reset.css);
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 16px;
+}
+
+/* --加入會員/會員登入-- */
+.membership{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+
+
+.membership h1{
+    position: relative;
+    display: inline-block;
+}
+
+.membership h1:after{
+    content: "";
+    width: 300px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 320px;
+    margin: auto;
+}
+
+
+/* --下方區塊-- */
+.membership section{
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    width: 1200px;
+    height: 350px;
+}
+
+.membership section img{
+    /* display: block; */
+    /* outline: 1px solid red; */
+    flex-basis: 500px;
+    /* width: 100%; */
+    /* height: 500px; */
+}
+
+.membership ul{
+    background-color: rgb(238, 221, 221);
+    flex-basis: 200px;
+    height: 230px;
+    text-align: center;
+}
+
+.membership ul li{
+    margin: 20px 0;
+}
+
+.membership ul li h3{
+    font-weight: bold;
+}
+
+.membership ul li:nth-child(4), .membership ul li:nth-child(5){
+    display: inline;
+    padding-right: 10px;
+}
+
+.membership ul li:nth-child(6), .membership ul li:nth-child(7){
+    display: inline-block;
+    padding-right: 15px;
+}
