@@ -1,62 +1,68 @@
 /*--輪播圖--*/
-.slider, .slider_point{
-    background-color: rgba(255, 212, 93, .7);
+.carousel_container{
+    width: 1200px;
+    margin: auto;
+    border: 5px solid pink;
+    /* overflow: hidden; */
 }
 
-.slider{
-    padding-top: 80px;
+.carousel_slide{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+.carousel_slide img{
+    width: 1200px;
 }
 
-.slider .la, .slider .ra {
+.slider_btn .la, .slider_btn .ra {
     display: block;
     width: 100px;
     height: 100px;
 }
 
-.slider .la:before{
+.slider_btn .la:before{
     content: "";
     display: block;
     width: 0;
     height: 0;
-    border: 20px solid rgba(0, 0, 0, 1);
-    border-color: transparent rgba(0, 0, 0, 1) transparent transparent;
+    border: 20px solid rgba(255, 255, 255, 1);
+    border-color: transparent rgba(255, 255, 255, 1) transparent transparent;
     margin-left: 20px;
     margin-top: 30px;
     /* float: left; */
+    opacity: .7;
 }
 
-.slider .ra:before{
+.slider_btn .ra:before{
     content: "";
     display: block;
     width: 0;
     height: 0;
-    border: 20px solid rgba(0, 0, 0, 1);
-    border-color: transparent  transparent transparent rgba(0, 0, 0, 1);
+    border: 20px solid rgba(255, 255, 255, 1);
+    border-color: transparent  transparent transparent rgba(255, 255, 255, 1);
     margin-left: 40px;
     margin-top: 30px;
+    opacity: .7;
 }
 
-.slider .la{
+.slider_btn .la{
     overflow: hidden;
     flex-shrink: 0;
     order: 1;
 }
 
-.slider .ra{
+.slider_btn .ra{
     overflow: hidden;
     flex-shrink: 0;
     order: 3;
 }
 
 .slider .middle{
-    order: 2;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
-    font-size: 0;
+    /* order: 2; */
+    /* box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
+    font-size: 0; */
 }
-
 
 .slider_point{
     display: flex;
@@ -65,7 +71,6 @@
 }
 
 .slider_point a{
-    /* border: 1px solid red; */
     display: block;
     width: 15px;
     height: 15px;
@@ -79,11 +84,15 @@
     background-color: #4165AF;
 }
 
+.slider_point :not(:first-child){
+    background-color: #F08400;
+}
+
 
 
 /* --精選推薦-- */
 .rec{
-    margin-left: 120px;
+    /* margin-left: 120px; */
     margin-top: 90px;
 }
 
@@ -142,7 +151,7 @@
 
 /* 媒體專訪 */
 .intvw{
-    margin-left: 120px;
+    /* margin-left: 120px; */
     margin-top: 90px;
     clear: both;
 }

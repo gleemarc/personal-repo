@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁</title>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- style.css -->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <!-- header -->
-    <div class=header>
-        <span class=logo>
-            <a href="index.html"><img src="./圖片/logo/logo_done_white.svg" alt=""></a>
+    <header class="main_block">
+        <span class="logo">
+            <a href="index.html"><img src="./pic/logo/logo_white.svg" alt=""></a>
         </span>
-        <ul class=nav>
+        <ul class="nav">
             <li><a href="./news.html">最新消息</a></li>
             <li><a href="./music_chart.html">歌曲排行</a></li>
             <li><a href="./playlist.html">歌單撥放</a></li>
@@ -26,13 +34,28 @@
             <li><a href="./live_info.html">演出資訊</a></li>
             <li><a href="./membership.html">加入會員</a></li>
         </ul>
-    </div>
+    </header>
     
     <!-- slider -->
-    <div class="slider">
+    <div class="carousel_container main_block">
+
+        <div class="carousel_slide">
+            <a href=""><img src="./pic/index/017.jpg" alt="" id="lastClone"></a>
+            <a href="https://www.facebook.com/vagabondfest/" class="middle" target="_blank"><img src="./pic/index/01.jpg" alt=""></a>
+            <a href=""><img src="./pic/index/012.jpg" alt=""></a>
+            <a href=""><img src="./pic/index/013.jpg" alt=""></a>
+            <a href=""><img src="./pic/index/014.jpg" alt=""></a>
+            <a href=""><img src="./pic/index/015.jpg" alt=""></a>
+            <a href=""><img src="./pic/index/016.jpg" alt=""></a>
+            <a href=""><img src="./pic/index/017.jpg" alt=""></a>
+            <a href="https://www.facebook.com/vagabondfest/" class="middle" target="_blank" ><img src="./pic/index/01.jpg" alt="" id="firstClone"></a>
+        </div>
+
+    </div>
+
+    <div class="slider_btn">
         <a href="#" class="la"></a>
         <a href="#" class="ra"></a>
-        <a href="https://www.facebook.com/vagabondfest/" class="middle" target="_blank"><img src="./圖片/index/01.jpg" alt=""></a>
     </div>
 
     <div class="slider_point">
@@ -46,18 +69,18 @@
     </div>
 
     <!-- 精選推薦 -->
-    <div class="rec">
+    <div class="rec main_block">
         <h1>精選推薦</h1>
         <ul>
             <li>
-                <img src="./圖片/index/珍饈.jpg" alt="">
+                <img src="./pic/index/02.jpg" alt="">
                 <h2>非人物種<br>
                     珍饈<br>
                     朝夕之間
                 </h2>
             </li>
             <li>
-                <img src="./圖片/index/陪我去走走.jpg" alt="">
+                <img src="./pic/index/03.jpg" alt="">
                 <h2>
                     阿丹玩球球<br>
                     陪我去走走<br>
@@ -65,14 +88,14 @@
                 </h2>
             </li>
             <li>
-                <img src="./圖片/index/大悲懺.jpg" alt="">
+                <img src="./pic/index/04.jpg" alt="">
                 <h2>
                     餵飽豬<br>
                     大悲懺<br>完全沒有畫面2.0
                 </h2>
             </li>
             <li>
-                <img src="./圖片/index/有沒有很頭痛.jpg" alt="">
+                <img src="./pic/index/05.jpg" alt="">
                 <h2>
                     露波合唱團<br>
                     有沒有很頭痛<br>
@@ -80,7 +103,7 @@
                 </h2>
             </li>
             <li>
-                <img src="./圖片/index/歹勢好勢.jpg" alt="">
+                <img src="./pic/index/06.jpg" alt="">
                 <h2>
                     拍謝少年<br>
                     歹勢好勢<br>
@@ -88,7 +111,7 @@
                 </h2>
             </li>
             <li>
-                <img src="./圖片/index/告訴我他們都在本來的什麼地方.jpg" alt="">
+                <img src="./pic/index/07.jpg" alt="">
                 <h2>
                     當代電影大師<br>
                     告訴我他們都在<br>
@@ -100,11 +123,11 @@
     </div>
 
     <!-- 媒體專訪 -->
-    <div class="intvw">
+    <div class="intvw main_block">
         <h1>媒體專訪</h1>
         <ul>
             <a href="#">
-                <img src="./圖片/index/[crop]deca joins專訪.jpg" alt="">
+                <img src="./pic/index/08.jpg" alt="">
                 <h2>
                     營造一個沒有人煙的地方：<br>
                     deca joins談《鳥鳥鳥》
@@ -112,7 +135,7 @@
             </a>
 
             <a href="#">
-                <img src="./圖片/index/[crop]collage專訪.jpg" alt="">
+                <img src="./pic/index/09.jpg" alt="">
                 <h2>
                     吼腔、和風、原民合唱，一<br>
                     幅無法定義的拼貼搖滾：珂<br>
@@ -121,7 +144,7 @@
             </a>
 
             <a href="#">
-                <img src="./圖片/index/[crop]拍謝少年專訪.jpg" alt="">
+                <img src="./pic/index/10.jpg" alt="">
                 <h2>
                     租書店裡的政治犯與流亡者<br>
                     ——拍謝少年談〈時代看顧<br>
@@ -131,31 +154,48 @@
         </ul>
     </div>
 
-    <h2 class="more_btn">
+    <!-- <h2 class="more_btn">
         MORE
-    </h2>
+    </h2> -->
 
     <!-- footer -->
-    <div class="footer">
-        <h3>關於我們</h3>
-        <h3>會員服務條款</h3>
-        <h3>免責聲明</h3>
-        <h3>相關產品</h3>
-        <h3>工作機會</h3>
-        <h3>幫助</h3>
+    <footer class="footer main_block">
+        <ul>
+            <li>
+                <h3><a href="#">關於我們</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">會員服務條款</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">免責聲明</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">相關產品</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">工作機會</a></h3>
+            </li>
+            <li>
+                <h3><a href="#">幫助</a></h3>
+            </li>
+            <li>
+                <h2>Follow Us!</h2>
+            </li>
+        </ul>
 
-        <h2>
-            Follow Us!<br>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-youtube-square"></i>
-            <i class="fab fa-instagram-square"></i>
-        </h2>
+        <div class="connect_icon">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+        </div>
+
         <p>
             <br><br><br> 本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
             參考資源:pinterest/ spotify/ streetvoice/ blow music/ kkbox 等。
         </p>
-    </div>
+    </footer>
 
 </body>
 </html>
