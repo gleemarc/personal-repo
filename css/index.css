@@ -1,9 +1,10 @@
-/*--輪播圖--*/
+/*--slider--*/
 .carousel_container{
     width: 1200px;
     margin: auto;
     border: 5px solid pink;
-    /* overflow: hidden; */
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel_slide{
@@ -19,6 +20,26 @@
     display: block;
     width: 100px;
     height: 100px;
+    position: relative;
+}
+
+.slider_btn{
+
+}
+
+.slider_btn .la{
+    position: absolute;
+    left: -30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.slider_btn .ra{
+    /* position: absolute; */
+
 }
 
 .slider_btn .la:before{
@@ -46,7 +67,7 @@
     opacity: .7;
 }
 
-.slider_btn .la{
+/* .slider_btn .la{
     overflow: hidden;
     flex-shrink: 0;
     order: 1;
@@ -56,7 +77,7 @@
     overflow: hidden;
     flex-shrink: 0;
     order: 3;
-}
+} */
 
 .slider .middle{
     /* order: 2; */

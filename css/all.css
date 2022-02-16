@@ -76,14 +76,17 @@ footer ul{
     display: flex;
     width: 1110px;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 footer ul li:not(li:last-child){
-    flex-basis: 150px;
+    /* flex-basis: 150px; */
+    margin-right: 60px;
 }
 
 footer ul li:last-child{
     margin-left: auto;
+    font-weight: bold;
 }
 
 footer a {
