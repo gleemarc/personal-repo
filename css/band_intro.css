@@ -39,7 +39,6 @@
 
 .band_list ul li img{
     width: 488px;
-    height: 400px;
 }
 
     /* --1.3項-- */
@@ -72,9 +71,8 @@
 
 
 /* --more_btn-- */
-.more_btn{
+/* .more_btn{
     position: relative;
-    /* border: 1px solid pink; */
     float: right;
     margin: 40px 50px 100px auto;
     overflow: hidden;
@@ -84,14 +82,13 @@
     content: "";
     width: 0;
     height: 0;
-    /* background-color: yellow; */
     border: 8px solid #000;
     border-color: transparent transparent transparent #000;
     float: left;
     position: absolute;
     top: 4px;
     left: 80px;
-}
+} */
 
 
 

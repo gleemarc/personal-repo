@@ -6,13 +6,12 @@
     position: relative;
 }
 
-
-
 .carousel_slide-single{
     width: 1200px;
     height: 100%;
     display: block;
     min-width: 1200px;
+    max-width: 100%;
 }
 
 .carousel_slide{
@@ -23,10 +22,10 @@
 }
 
 .carousel_slide-single img {
-    width: 1200px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
 }
 
 .slider_btn .la{
@@ -145,7 +144,7 @@
 }
 
 .rec ul li{
-    flex-basis: 301px;
+    flex-basis: 310px;
 
     /* display: flex;
     flex-direction: column;
@@ -262,3 +261,129 @@
     left: 80px;
 } */
 
+
+/* ---------rwd--------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .carousel_container{
+        width: 1100px;
+    }
+    .carousel_slide-single{
+        width: 100%;
+    }
+    .carousel_slide {
+
+    }
+
+    .rec ul {
+        width: 1100px;
+    }
+
+    .intvw ul {
+        width: 1100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .rec ul {
+        width: 900px;
+    }
+    .rec ul li {
+        flex-basis: 300px;
+    }
+
+
+    .intvw ul {
+        width: 900px;
+    }
+    .intvw ul li {
+        flex-basis: 250px;
+    }
+    .intvw ul li h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .rec ul {
+        width: 720px;
+    }
+    .rec ul li {
+        flex-basis: 240px;
+    }
+    .rec ul li h2 {
+        font-size: 1.2rem;
+    }
+
+
+    .intvw ul {
+        width: 720px;
+    }
+    .intvw ul li {
+        flex-basis: 200px;
+    }
+    .intvw ul li h2 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .rec ul {
+        width: 540px;
+    }
+    .rec ul li {
+        flex-basis: 240px;
+    }
+    .rec ul li h2 {
+        font-size: 1rem;
+    }
+
+
+    .intvw ul {
+        width: 540px;
+        flex-wrap: wrap;
+    }
+    .intvw ul li {
+        flex-basis: 240px;
+    }
+    .intvw ul li h2 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 575.98px){
+    .carousel_container {
+        max-width: 90%;
+    }
+    .carousel_slide-single {
+        height: 80%;
+    }
+    .carousel_slide-single img {
+        width: 100%;
+    }
+    
+    .rec ul {
+        width: 100%;
+    }
+    .rec ul li {
+        flex-basis: 220px;
+    }
+    .rec ul li h2 {
+        font-size: .8rem;
+    }
+
+
+    .intvw ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .intvw ul li {
+        flex-basis: 200px;
+        padding: 0 10px;
+    }
+    .intvw ul li h2 {
+        font-size: .8rem;
+    }
+
+}

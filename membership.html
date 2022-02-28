@@ -9,61 +9,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/all.css">
+   
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    
     <link rel="stylesheet" href="./css/membership.css">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
-    <!-- header -->
+    <!--------- header --------->
     <header class="main_block">
         <span class="logo">
             <a href="index.html"><img src="./pic/logo/logo_white.svg" alt=""></a>
         </span>
-        <ul class="nav">
-            <li><a href="./news.html">最新消息</a></li>
-            <li><a href="./music_chart.html">歌曲排行</a></li>
-            <li><a href="./playlist.html">歌單撥放</a></li>
-            <li><a href="./band_intro.html">樂團介紹</a></li>
-            <li><a href="./live_info.html">演出資訊</a></li>
-            <li><a href="./membership.html">加入會員</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./music_chart.html">歌曲排行</a></li>
+                <li><a href="./playlist.html">歌單撥放</a></li>
+                <li><a href="./band_intro.html">樂團介紹</a></li>
+                <li><a href="./live_info.html">演出資訊</a></li>
+                <li><a href="./membership.html">加入會員</a></li>
+            </ul>
+        </nav>
     </header>
 
 
     <!-- 加入會員/會員登入 -->
-    <div class="membership">
+    <div class="membership main_block">
         <h1>加入會員/會員登入</h1>
-        <section>
-            <img src="./pic/membership/01.jpg" alt="">
-            <ul>
-                <li>
-                    <h3>歡迎使用Indie Trend</h3>
-                </li>
-                <li>
-                    <input type="text" placeholder="請輸入帳號">
-                </li>
-                <li>
-                    <input type="text" placeholder="請輸入密碼">
-                </li>
-                <li>
-                    <input type="checkbox">
-                    <span>保持登入</span>
-                </li>
-                <li>
-                    <input type="button" value="忘記密碼">
-                </li>
-                <li>
-                    <input type="button" value="登入" style="width: 70px;">
-                </li>
-                <li>
-                    <input type="button" value="加入會員">
-                </li>
-            </ul>
-        </span>
+            <!-- <img src="./pic/membership/01.jpg" alt=""> -->
+        <ul>
+            <li>
+                <h2>歡迎使用Indie Trend</h2>
+            </li>
+            <li>
+                <span>帳號：</span>
+                <input type="text" placeholder="請輸入帳號" class="typearea">
+            </li>
+            <li>
+                <span>密碼：</span>
+                <input type="password" placeholder="請輸入密碼" class="typearea">
+            </li>
+            <li>
+                <input type="checkbox" class="keep_login">
+                <span>保持登入</span>
+            </li>
+            <li>
+               <a href="#idontgoanywhere">忘記密碼</a>
+            </li>
+            <!-- <br> -->
+            <li>
+                <input type="submit" value="登入" class="login">
+            </li>
+        </ul>
     </div>
     
 
 
-    <!-- footer -->
+    <!--------- footer --------->
     <footer class="footer main_block">
         <ul>
             <li>

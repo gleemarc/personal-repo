@@ -33,7 +33,7 @@ prevBtn.addEventListener('click',function(){
     if(counter <= 0){
         counter = carouselImages.length -1
     }else{
-        counter --
+        counter --;
     }
     carouselSlide.style.transition = "transform 1s ease-in-out";
     // console.log(counter);

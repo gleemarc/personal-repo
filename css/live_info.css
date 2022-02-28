@@ -25,7 +25,7 @@ h1:after{
     margin: auto;
 }
 
-/* --nav/info flex專區-- */
+/* --nav/info flex-- */
 .live_list{
     display: flex;
     width: 1200px;
@@ -43,29 +43,34 @@ h1:after{
 }
 
 /* --活動列表左半邊-- */
+.live_list .nav input {
+    padding: 5px;
+    /* border: 1px solid orange; */
+    outline: 0;
+}
+
 .live_list .nav h2:first-child{
     /* outline: 1px solid red; */
     margin-bottom: 30px;
 }
 
-.live_list .nav .search{
-    position: relative;
-    /* display: inline-block; */
-}
-
-.live_list .nav .search:after{
-    content: "";
-    width: 225px;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
 
 .live_list .nav .area{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.live_list .nav .area_type li a {
+    text-decoration: none;
+}
+
+.live_list .nav .area_type li a h3:hover {
+    color: #4B84B7;
+}
+
+
+.live_list .nav .area_type li a:visited {
+    color: #F08400;
 }
 
 .live_list .nav .area_type{
@@ -85,9 +90,13 @@ h1:after{
     margin-top: 30px;
 }
 
-.live_list .nav .re_act{
-    margin-top: 30px;
+#month_select {
+    margin-top: 20px;
+    padding: 5px;
+    outline: 0;
 }
+
+
 
 /* --活動列表右半邊-- */
 .info{
@@ -105,9 +114,7 @@ h1:after{
 
 .info img{
     flex-basis: 325px;
-    width: 100%;
     height: 206px;
-    /* padding: 10px; */
 }
 
 .info .act_date{
@@ -116,7 +123,7 @@ h1:after{
     align-self: center;
 }
 .info .act_info{
-    flex-basis: 430px;
+    flex-basis: 450px;
 }
 
 .info .act_date, .info .act_info{

@@ -2,6 +2,8 @@
 .list{
     margin-top: 90px;
     margin-left: 120px;
+    /* padding-bottom: 60px; */
+    margin-bottom: 100px;
 }
 
 .list h1{
@@ -24,63 +26,39 @@
     margin: auto;
 }
 
-.list .chart{
-    /* border: 2px solid pink; */
-    width: 1200px;
-    margin-top: 50px;
+.list .chart ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 1200px;
 }
 
-.list .chart tr{
-    /* border: 1px solid red; */
+.list .chart ul li {
+    /* border: 1px solid white; */
+    flex-basis: 1000px;
+    padding: 30px 10px 30px;
+
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-bottom: 3px solid #fff;
+    border-radius: 5%;
 }
 
-.list .chart tr td{
-    /* border: 1px solid tan; */
-    vertical-align: middle;
-    height: 200px;
+
+.list .chart ul li img {
+    flex-basis: 80px;
+    flex-grow: 1;
+    width: 200px;
 }
 
-.list .chart tr .no{
+.list .chart ul li h2, .list .chart img, .list .chart span {
+    flex-basis: 30px;
+    flex-grow: 1;
     text-align: center;
-    width: 150px;
 }
 
-.list .chart tr .pic{
-    width: 300px;
-    text-align: center;
-}
-
-.list .chart tr .pic img{
-    width: 150px;
-}
-
-.list .chart tr .name{
-    font-weight: bold;
-    justify-content: center;
-}
-
-.list .chart tr .icon{
-    font-size: 50px;
-}
-
-
-.more_btn{
-    position: relative;
-    /* border: 1px solid pink; */
-    float: right;
-    margin: 40px 50px 100px auto;
-    overflow: hidden;
-    width: 90px;
-}
-.more_btn:after{
-    content: "";
-    width: 0;
-    height: 0;
-    /* background-color: yellow; */
-    border: 8px solid #000;
-    border-color: transparent transparent transparent #000;
-    float: left;
-    position: absolute;
-    top: 4px;
-    left: 80px;
+.list .chart ul li h2:nth-child(4) {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    cursor: pointer;
 }

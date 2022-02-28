@@ -8,9 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/all.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    
+
     <link rel="stylesheet" href="./css/music_chart.css">
+    <link rel="stylesheet" href="./css/all.css">
+
 </head>
 <body>
     <!-- header -->
@@ -18,180 +23,119 @@
         <span class="logo">
             <a href="index.html"><img src="./pic/logo/logo_white.svg" alt=""></a>
         </span>
-        <ul class="nav">
-            <li><a href="./news.html">最新消息</a></li>
-            <li><a href="./music_chart.html">歌曲排行</a></li>
-            <li><a href="./playlist.html">歌單撥放</a></li>
-            <li><a href="./band_intro.html">樂團介紹</a></li>
-            <li><a href="./live_info.html">演出資訊</a></li>
-            <li><a href="./membership.html">加入會員</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./music_chart.html">歌曲排行</a></li>
+                <li><a href="./playlist.html">歌單撥放</a></li>
+                <li><a href="./band_intro.html">樂團介紹</a></li>
+                <li><a href="./live_info.html">演出資訊</a></li>
+                <li><a href="./membership.html">加入會員</a></li>
+            </ul>
+        </nav>
     </header>
-
     <!-- 全站排行 -->
-    <div class="list">
+    <main class="list main_block">
         <h1>全站排行</h1>
-        <table class="chart">
-            <tr>
-                <td class="no">
-                    <h1>1</h1>
-                </td>
-                <td class="pic">
+        <div class="chart">
+            <ul>
+                <li>
+                    <h2>1</h2>
                     <img src="./pic/music-chart/01.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>夜的輪廓</h2>
-                    <br>
-                    <h3>午夜乒乓</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>2</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>夜的輪廓</h2><br>
+                        <h3>午夜乒乓</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>2</h2>
                     <img src="./pic/music-chart/02.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>黑色畫家</h2>
-                    <br>
-                    <h3>無妄合作社</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>3</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>黑色畫家</h2><br>
+                        <h3>無妄合作社</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>3</h2>
                     <img src="./pic/music-chart/03.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>故事</h2>
-                    <br>
-                    <h3>廢埕樂團</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>4</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>故事</h2><br>
+                        <h3>廢埕樂團</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>4</h2>
                     <img src="./pic/music-chart/04.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>害羞男孩戀愛日記</h2>
-                    <br>
-                    <h3>厭世少年</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>5</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>害羞男孩戀愛日記</h2><br>
+                        <h3>厭世少年</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>5</h2>
                     <img src="./pic/music-chart/05.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>Jurassic Ride</h2>
-                    <br>
-                    <h3>The Dinosaur's Skin</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>6</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>Jurassic Ride</h2><br>
+                        <h3>The Dinosaur's Skin</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>6</h2>
                     <img src="./pic/music-chart/06.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>春天有腳</h2>
-                    <br>
-                    <h3>溫室雜草</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>7</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>春天有腳</h2><br>
+                        <h3>溫室雜草</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>7</h2>
                     <img src="./pic/music-chart/07.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>真正的愛情</h2>
-                    <br>
-                    <h3>八十八顆芭樂籽</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>8</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>真正的愛情</h2><br>
+                        <h3>八十八顆芭樂籽</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>8</h2>
                     <img src="./pic/music-chart/08.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>For Lily</h2>
-                    <br>
-                    <h3>溫蒂漫步</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-            <tr>
-                <td class="no">
-                    <h1>9</h1>
-                </td>
-                <td class="pic">
+                    <span>
+                        <h2>For Lily</h2><br>
+                        <h3>溫蒂漫步</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+                <li>
+                    <h2>9</h2>
                     <img src="./pic/music-chart/09.jpg" alt="">
-                </td>
-                <td class="name">
-                    <h2>我不想聽我不想聽<br>
-                        被寵壞的搖滾明星</h2>
-                    <br>
-                    <h3>當代電影大師</h3>
-                </td>
-                <td class="icon">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-play-circle"></i>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <h2 class="more_btn">
-        MORE
-    </h2>
+                    <span>
+                        <h2>我不想聽我不想聽<br>
+                            被寵壞的搖滾明星</h2><br>
+                        <h3>當代電影大師</h3>
+                    </span>
+                    <h2><i class="far fa-heart"></i>
+                        <i class="far fa-play-circle"></i></h2>
+                </li>
+            </ul>
+        </div>
+    </main>
+        
+        
+        
     
     <!-- footer -->
     <footer class="footer main_block">

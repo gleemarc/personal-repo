@@ -32,6 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .new_album ul li{
@@ -40,9 +41,25 @@
 }
 
 .new_album ul li img{
-    width: 100%;
+    width: 90%;
     margin-bottom: 55px;
+    cursor: pointer;
+    transition: all .5s;
+
 }
+.new_album ul li img:hover{
+    transform: scale(1.1);
+    opacity: .7;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+
+}
+
+.new_album ul li a{
+    display: inline-block;
+    text-align: center;
+}
+
 
 .new_album ul li h2{
     line-height: 36px;
@@ -133,4 +150,9 @@
     position: absolute;
     top: 4px;
     left: 80px;
+}
+
+.live iframe {
+    margin-top: 30px;
+    
 }

@@ -75,12 +75,6 @@ header nav ul li a:hover{
     transform-origin: 50% 50%;
 }
 
-/* ---------rwd--------- */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-    header, footer, .main_block{
-        width: 1140px;
-    }
-}
 
 
 /* ---------footer--------- */
@@ -103,6 +97,8 @@ footer{
     font-weight: bold;
 }
 
+
+/* ---icon link--- */
 .footer a {
     text-decoration: none;
     color: white;
@@ -110,7 +106,8 @@ footer{
 
 
 .footer .connect_icon{
-    margin-top: 5px;
+    /* outline: 1px solid white; */
+    margin-top: 10px;
     width: 300px;
     font-size: 30px;
     display: flex;
@@ -132,3 +129,171 @@ footer{
     font-size: 10px;
 }
 
+
+/* ---------rwd--------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    header, footer, .main_block{
+        width: 1000px;
+    }
+     header nav ul {
+        width: 1000px;
+    }
+    header nav ul li {
+        flex: 1 0 calc(100% / 6);
+    }
+    .footer ul{
+        width: 1000px;
+    }
+    .footer .connect_icon {
+        /* outline: 1px solid white; */
+        width: 150px;
+    }
+    .footer .connect_icon a{
+        flex: 1 0 calc( 100% / 4);
+        text-align: right;
+    }    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    header, footer, .main_block{
+        width: 900px;
+    }
+     header nav ul {
+        width: 900px;
+    }
+    header nav ul li {
+        flex: 1 0 calc(100% / 6);
+    }
+    .footer ul{
+        width: 900px;
+    }
+    .footer .connect_icon {
+        /* outline: 1px solid white; */
+        width: 150px;
+    }
+    .footer .connect_icon a{
+        flex: 1 0 calc( 100% / 4);
+        text-align: right;
+    }    
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    header, footer, .main_block{
+        width: 720px;
+    }
+     header nav ul {
+        width: 720px;
+    }
+    header nav ul li {
+        flex: 1 0 calc(100% / 6);
+    }
+
+    .footer ul{
+        width: 700px;
+    }
+    .footer ul li:not(li:last-child){
+        margin-right: 30px;
+    }
+    
+
+    .footer ul li h3 {
+        font-size: 14px;
+    }
+    .footer ul li h2 {
+        font-size: 20px;
+    }
+
+    .footer .connect_icon {
+        /* outline: 1px solid white; */
+        width: 150px;
+    }
+    .footer .connect_icon a{
+        flex: 1 0 calc( 100% / 4);
+        text-align: right;
+        font-size: 80%;
+    }    
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    header, footer, .main_block{
+        width: 540px;
+    }
+     header nav ul {
+        width: 540px;
+    }
+    header nav ul li {
+        flex: 1 0 calc(100% / 6);
+    }
+
+    .footer ul{
+        width: 540px;
+    }
+    .footer ul li:not(li:last-child){
+        margin-right: 20px;
+    }
+    
+
+    .footer ul li h3 {
+        font-size: 10px;
+    }
+    .footer ul li h2 {
+        font-size: 16px;
+    }
+
+    .footer .connect_icon {
+        /* outline: 1px solid white; */
+        width: 90px;
+    }
+    .footer .connect_icon a{
+        flex: 1 0 calc( 100% / 4);
+        text-align: right;
+        font-size: 70%;
+    }    
+    .footer p {
+        font-size: 40%;
+    }
+
+}
+
+@media (max-width: 575.98px){
+    header, footer, .main_block{
+        width: 100%;
+    }
+     header nav ul {
+        width: 100%;
+    }
+    header nav ul li {
+        flex: 1 0 calc(100% / 6);
+    }
+
+    .footer ul{
+        width: 100%;
+    }
+    .footer ul li:not(li:last-child){
+        margin-right: auto;
+    }
+    
+
+    .footer ul li h3 {
+        font-size: 8px;
+    }
+    .footer ul li h2 {
+        font-size: 14px;
+    }
+
+    .footer .connect_icon {
+        /* outline: 1px solid white; */
+        width: 90px;
+    }
+    .footer .connect_icon a{
+        flex: 1 0 calc( 100% / 4);
+        text-align: right;
+        font-size: 60%;
+    }    
+    .footer p {
+        font-size: 30%;
+    }
+
+}
