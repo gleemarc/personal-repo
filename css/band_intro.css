@@ -1,8 +1,7 @@
 /* --樂團列表-- */
 .band_list{
-    margin-top: 100px;
-    margin-left: 150px;
-    border: 1px solid transparent;
+    /* margin-top: 100px; */
+    /* margin-left: 150px; */
 }
 
 .band_list h1{
@@ -27,24 +26,29 @@
 
 }
 
-.band_list ul{}
+.band_list ul{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
 
 .band_list ul li{
-    /* outline: 1px solid brown; */
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
-    width: 1100px;
+    /* margin-bottom: 100px; */
 }
+
 
 .band_list ul li img{
     width: 488px;
+    /* flex-shrink: 1; */
 }
 
     /* --1.3項-- */
 .band_list ul li span{
     text-align: center;
     width: 490px;
+    /* flex-shrink: 3; */
 }
 
 .band_list ul li h2{
@@ -57,9 +61,6 @@
 }
 
     /* --2.4項-- */
-.even{
-    margin-left: 100px;
-}
 
 .even img{
     order: 2;
@@ -91,11 +92,102 @@
 } */
 
 
+/* ---------rwd--------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .band_list ul {
+        width: 1000px;
+    }
+    .band_list ul li img {
+        width: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .band_list ul {
+        width: 900px;
+    }
+    .band_list ul li img {
+        width: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 991.98px){
+    .band_list ul {
+        width: 720px;
+    }
+    .band_list ul li img {
+        width: 350px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .band_list ul li span {
+        margin: 0 10px;
+    }
+}
 
+@media (min-width: 576px) and (max-width: 767.98px){
+    .band_list ul {
+        width: 540px;
+    }
+    .band_list ul li {
+        flex-direction: column;
+        /* justify-content: center; */
+        flex-basis: 540px;
+        align-items: center;
+    }
+    .band_list ul li img {
+        width: 90%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .band_list ul li span {
+        margin: 20px 0 50px;
+    }
+    .even img {
+        order: 1;
+    }
+    .even_span {
+        order: 2;
+    }
+}
 
+@media (max-width: 575.98px){
+    .band_list h1 {
+        margin-left: 5px;
+    }
+    .band_list ul {
+        width: 100%;
+    }
+    .band_list ul li span h2 {
+        font-size: 1.2rem;
+    } 
+    .band_list ul li span h3 {
+        font-size: 1rem;
+    }
+    .band_list ul li {
+        flex-direction: column;
+        /* justify-content: center; */
+        flex-basis: 90%;
+        align-items: center;
+    }
+    .band_list ul li img {
+        width: 90%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .band_list ul li span {
+        width: 90%;
+        margin: 20px 0 50px;
+    }
+    .even img {
+        order: 1;
+    }
+    .even_span {
+        order: 2;
+    }
 
-
-
-
+}

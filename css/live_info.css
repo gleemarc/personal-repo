@@ -156,3 +156,17 @@ h1:after{
     top: 4px;
     left: 80px;
 }
+
+/* ---------rwd--------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .live_list {
+        width: 90%;
+    }
+    .live_list .nav {
+        
+    }
+    .live_list .info li {
+        flex-basis: 800px;
+    }
+}
+
