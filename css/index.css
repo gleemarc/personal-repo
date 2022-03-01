@@ -25,16 +25,12 @@
 .carousel_slide{
     display: flex;
     flex-wrap: nowrap;
-    /* height: 600px; */
     width: 8400px;
 }
 
 .carousel_slide-single img {
-    /* max-width: 1200px; */
     width: 100%;
     height: 100%;
-    /* width: 79vw;
-    height: 42vw; */
 }
 
 .slider_btn .la{

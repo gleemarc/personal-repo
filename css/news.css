@@ -131,9 +131,8 @@
 }
 
 
-.more_btn{
+/* .more_btn{
     position: relative;
-    /* border: 1px solid pink; */
     float: right;
     margin: 40px 50px 100px auto;
     overflow: hidden;
@@ -143,18 +142,13 @@
     content: "";
     width: 0;
     height: 0;
-    /* background-color: yellow; */
     border: 8px solid #000;
     border-color: transparent transparent transparent #000;
     float: left;
     position: absolute;
     top: 4px;
     left: 80px;
-}
-
-.live iframe {
-    margin-top: 30px;
-}
+} */
 
 /* ---------rwd--------- */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
@@ -225,7 +219,7 @@
 
 }
 
-/* iframe rwd */
+/*-------- iframe rwd -------*/
 .live{
     /* border: 1px solid red; */
     font-size: 0;
