@@ -159,14 +159,112 @@ h1:after{
 
 /* ---------rwd--------- */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-    .live_list {
-        width: 90%;
-    }
-    .live_list .nav {
-        
-    }
-    .live_list .info li {
-        flex-basis: 800px;
+    .live_list .info li img {
+        flex-basis: 180px;
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .live_list .info li img {
+        width: 70%;
+        /* height: 100%; */
+    }
+    .live_list .info li {
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    .info .act_info {
+        flex-basis: auto;
+    }
+    .info .act_date {
+        flex-basis: auto;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .live_list .info li img {
+        width: 50%;
+        /* height: 100%; */
+    }
+    .live_list .info li {
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    .info .act_info {
+        flex-basis: auto;
+    }
+    .info .act_date {
+        flex-basis: auto;
+        align-self: flex-start;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .live_list{
+        flex-direction: column;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .nav input {
+        width: 200px;
+        height: 30px;
+    }
+    #month_select {
+        width: 200px;
+        height: 30px;
+    }
+    
+    .live_list .info li img {
+        width: 50%;
+    }
+    .live_list .info li {
+        flex-direction: column;
+    }
+    .info .act_info {
+        flex-basis: auto;
+    }
+    .info .act_date {
+        flex-basis: auto;
+        align-self: flex-start;
+    }
+
+}
+
+@media (max-width: 575.98px){
+    .live_list{
+        flex-direction: column;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .nav input {
+        width: 200px;
+        height: 30px;
+    }
+    #month_select {
+        width: 200px;
+        height: 30px;
+    }
+    
+    .live_list .info li img {
+        width: 50%;
+    }
+    .live_list .info li {
+        flex-direction: column;
+    }
+    .info .act_info {
+        flex-basis: auto;
+    }
+    .info .act_date {
+        flex-basis: auto;
+        align-self: flex-start;
+    }
+
+}
