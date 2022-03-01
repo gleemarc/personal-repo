@@ -127,3 +127,36 @@
 }
 
 
+/* ---------rwd--------- */
+@media (max-width: 575.98px){
+    .title {
+        padding-left: 20px;
+    }
+    .classic ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .classic ul li {
+        flex-basis: 300px;
+    }
+    .classic ul li h3:last-child {
+        margin-bottom: 40px;
+    }
+    .classic ul li img {
+        margin-bottom: 10px;
+    }
+
+    .rock ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .rock ul li {
+        flex-basis: 300px;
+    }
+    .rock ul li h3:last-child {
+        margin-bottom: 40px;
+    }
+    .rock ul li img {
+        margin-bottom: 10px;
+    }
+}

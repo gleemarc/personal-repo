@@ -1,31 +1,40 @@
 /*-----------------slider-----------------*/
 .carousel_container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    /* width: 79vw;
+    height: 42vw; */
     margin: auto;
     overflow: hidden;
     position: relative;
+    /* height: 100vh; */
 }
 
 .carousel_slide-single{
-    width: 1200px;
-    height: 100%;
     display: block;
-    min-width: 1200px;
-    max-width: 100%;
+    /* width: 40vw; */
 }
-
-.carousel_slide{
-    display: flex;
-    flex-wrap: nowrap;
-    height: 600px;
-    width: 8400px !important;
+/* .carousel_slide-single {
+    width: 100%;
 }
 
 .carousel_slide-single img {
     width: 100%;
+} */
+
+.carousel_slide{
+    display: flex;
+    flex-wrap: nowrap;
+    /* height: 600px; */
+    width: 8400px;
+}
+
+.carousel_slide-single img {
+    /* max-width: 1200px; */
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center center;
+    /* width: 79vw;
+    height: 42vw; */
 }
 
 .slider_btn .la{
@@ -265,13 +274,12 @@
 /* ---------rwd--------- */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
     .carousel_container{
-        width: 1100px;
+        /* max-width: 1000px; */
+        /* width: 80%; */
+    
     }
-    .carousel_slide-single{
-        width: 100%;
-    }
-    .carousel_slide {
-
+    .carousel_slide-single img {
+        /* width: 80%; */
     }
 
     .rec ul {

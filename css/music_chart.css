@@ -40,8 +40,8 @@
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    border-bottom: 3px solid #fff;
-    border-radius: 5%;
+    border-bottom: 2px solid #fff;
+    /* border-radius: ; */
 }
 
 
@@ -61,4 +61,32 @@
     font-size: 2rem;
     letter-spacing: 10px;
     cursor: pointer;
+}
+
+/* ---------rwd--------- */
+@media (max-width: 575.98px) {
+    .list .chart ul {
+        margin: 0 auto;
+    }
+    .list .chart ul li {
+        flex-basis: 250px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .list .chart ul li span {
+        margin-top: 30px;
+        line-height: 1.4;
+    }
+    .list .chart ul li span h2 {
+        font-size: 1.2rem;
+    }
+    .list .chart ul li span h3 {
+        font-size: .8rem;
+    }
+    .list .chart ul li h2:nth-child(4) {
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+
+    }
+
 }
