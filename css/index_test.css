@@ -1,0 +1,393 @@
+/*-----------------slider-----------------*/
+.carousel_container{
+    max-width: 1200px;
+    width: 100%;
+    /* width: 79vw;
+    height: 42vw; */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.carousel_slide-single{
+    display: block;
+    /* width: 40vw; */
+}
+/* .carousel_slide-single {
+    width: 100%;
+}
+
+.carousel_slide-single img {
+    width: 100%;
+} */
+
+.carousel_slide{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 8400px;
+}
+
+.carousel_slide-single img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_btn .la{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -20px;
+    top: 40%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.slider_btn .ra{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+
+.slider_btn .la:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 20px solid rgba(255, 255, 255, 1);
+    border-color: transparent rgba(255, 255, 255, 1) transparent transparent;
+    margin-left: 20px;
+    margin-top: 30px;
+    /* float: left; */
+    opacity: .7;
+}
+
+
+.slider_btn .ra{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    position: absolute;
+    right: -20px;
+    top: 40%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+
+.slider_btn .ra:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 20px solid rgba(255, 255, 255, 1);
+    border-color: transparent  transparent transparent rgba(255, 255, 255, 1);
+    margin-left: 40px;
+    margin-top: 30px;
+    opacity: .7;
+}
+
+
+
+/*
+.slider_point{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.slider_point a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 31px;
+    margin-top: 20px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.slider_point :first-child{
+    background-color: #4165AF;
+}
+
+.slider_point :not(:first-child){
+    background-color: #F08400;
+}
+*/
+
+
+/*---------------------精選推薦--------------------*/
+.rec{
+    margin-top: 90px;
+}
+
+.rec h1{
+    position: relative;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 1px rgba(240, 132, 0, .7);
+}
+
+.rec h1:after{
+    content: "";
+    background: rgba(240, 132, 0, 1);
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 160px;
+}
+
+.rec ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.rec ul li{
+    flex-basis: 310px;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.rec ul li a{
+    display: inline-block;
+    text-align: center;
+}
+
+.rec ul li img{
+    width: 80%;
+    margin-bottom: 15px;
+    transition: all .5s;
+
+    /*如果不做hover transform特效可以考慮用這個來作為對齊手段
+     margin-left: 50%;
+    transform: translateX(-50%); */
+}
+
+.rec ul li h2{
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rec ul li img:hover{
+    transform: scale(1.1);
+    opacity: .7;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+
+
+/*------------------媒體專訪------------------*/
+.intvw h1{
+    position: relative;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 1px rgba(240, 132, 0, .7);
+}
+
+.intvw h1:after{
+    content: "";
+    background: rgba(240, 132, 0, 1);
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 160px;
+}
+
+.intvw ul{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.intvw li{
+    flex-basis: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intvw a{
+    text-decoration: none;
+}
+
+.intvw a img:hover{
+    opacity: .7;
+}
+.intvw a img{
+    width: 100%;
+    margin-bottom: 20px;
+
+    transition: all .5s;
+}
+
+
+.intvw a h2:hover{
+    color: rgba(75, 132, 183, 1);
+}
+
+.intvw ul a h2{
+    margin-bottom: 40px;
+    line-height: 30px;
+    /* align-self: center; */
+    color: white;
+    transition: all .5s;
+    text-align: center;
+}
+
+
+
+
+/* .more_btn{
+    position: relative;
+    float: right;
+    margin: 40px 50px 100px auto;
+    overflow: hidden;
+    width: 90px;
+}
+
+.more_btn:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid #000;
+    border-color: transparent transparent transparent #000;
+    float: left;
+    position: absolute;
+    top: 4px;
+    left: 80px;
+} */
+
+
+/* ---------rwd--------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .carousel_container{
+        /* max-width: 1000px; */
+        /* width: 80%; */
+    
+    }
+    .carousel_slide-single img {
+        /* width: 80%; */
+    }
+
+    .rec ul {
+        width: 1100px;
+    }
+
+    .intvw ul {
+        width: 1100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .rec ul {
+        width: 900px;
+    }
+    .rec ul li {
+        flex-basis: 300px;
+    }
+
+
+    .intvw ul {
+        width: 900px;
+    }
+    .intvw ul li {
+        flex-basis: 250px;
+    }
+    .intvw ul li h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .rec ul {
+        width: 720px;
+    }
+    .rec ul li {
+        flex-basis: 240px;
+    }
+    .rec ul li h2 {
+        font-size: 1.2rem;
+    }
+
+
+    .intvw ul {
+        width: 720px;
+    }
+    .intvw ul li {
+        flex-basis: 200px;
+    }
+    .intvw ul li h2 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .rec ul {
+        width: 540px;
+    }
+    .rec ul li {
+        flex-basis: 240px;
+    }
+    .rec ul li h2 {
+        font-size: 1rem;
+    }
+
+
+    .intvw ul {
+        width: 540px;
+        flex-wrap: wrap;
+    }
+    .intvw ul li {
+        flex-basis: 240px;
+    }
+    .intvw ul li h2 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 575.98px){
+    .carousel_container {
+        max-width: 90%;
+    }
+    .carousel_slide-single {
+        height: 80%;
+    }
+    .carousel_slide-single img {
+        width: 100%;
+    }
+    
+    .rec ul {
+        width: 100%;
+    }
+    .rec ul li {
+        flex-basis: 220px;
+    }
+    .rec ul li h2 {
+        font-size: .8rem;
+    }
+
+
+    .intvw ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .intvw ul li {
+        flex-basis: 200px;
+        padding: 0 10px;
+    }
+    .intvw ul li h2 {
+        font-size: .8rem;
+    }
+
+}

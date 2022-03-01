@@ -65,11 +65,14 @@
 
 /* ---------rwd--------- */
 @media (max-width: 575.98px) {
+    .list .chart ul li > h2:first-child {
+        display: none;
+    }
     .list .chart ul {
         margin: 0 auto;
     }
     .list .chart ul li {
-        flex-basis: 250px;
+        flex-basis: 200px;
         flex-wrap: wrap;
         margin: 0 auto;
     }
@@ -86,7 +89,6 @@
     .list .chart ul li h2:nth-child(4) {
         font-size: 1.3rem;
         letter-spacing: 3px;
-
     }
 
 }

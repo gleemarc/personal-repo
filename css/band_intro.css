@@ -35,7 +35,7 @@
 .band_list ul li{
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
 }
 
 
