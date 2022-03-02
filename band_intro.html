@@ -15,6 +15,10 @@
     
     <link rel="stylesheet" href="./css/band_intro.css">
     <link rel="stylesheet" href="./css/all.css">
+
+    <!-- AMBURGERS -->
+    <link rel="stylesheet" href="./vendors/hamburgers-master/dist/hamburgers.css">
+    
 </head>
 <body>
     <!--------- header --------->
@@ -22,7 +26,13 @@
         <span class="logo">
             <a href="index.html"><img src="./pic/logo/logo_white.svg" alt=""></a>
         </span>
-        <nav>
+        <button class="hamburger hamburger--emphatic is-active" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner">        
+              </span>
+            </span>
+        </button>
+        <nav class="main_nav">
             <ul>
                 <li><a href="./news.html">最新消息</a></li>
                 <li><a href="./music_chart.html">歌曲排行</a></li>
@@ -32,8 +42,9 @@
                 <li><a href="./membership.html">加入會員</a></li>
             </ul>
         </nav>
-    </header>
 
+
+    </header>
 
     <!-- 樂團列表 -->
     <main class="band_list main_block">
@@ -161,5 +172,13 @@
         </p>
     </footer>
 
+        <!-- jquery -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>   
+        <!-- js --> 
+        <script src="./js/hamburger.js"></script>
+    
 </body>
 </html>

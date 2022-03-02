@@ -75,6 +75,10 @@ header nav ul li a:hover{
     transform-origin: 50% 50%;
 }
 
+.hamburger {
+    display: none;
+}
+
 /* ---------footer--------- */
 footer{
     background-color: #000;
@@ -264,6 +268,36 @@ footer{
     }
     header nav ul li {
         flex: 1 0 calc(100% / 6);
+    }
+
+    .hamburger {
+        display: inline-block;
+        /* border: 1px solid red; */
+    }
+    header nav {
+        display: block;
+        position: relative;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        /* background-color: #fff; */
+        /* justify-content: left; */
+        align-items: flex-start;
+        position: absolute;
+        left: 0;
+        top: -50px;
+    }
+
+    header nav ul li {
+        padding: 5px 5px;
+        display: inline-block;
+        /* margin-bottom: 5px; */
+        z-index: 10;
+        background-color: rgba(255, 255, 255, .7);
+        
+        /* background-color: #fff; */
+        
     }
 
     .footer ul{
