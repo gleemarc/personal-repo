@@ -75,8 +75,8 @@ header nav ul li a:hover{
     transform-origin: 50% 50%;
 }
 
-.hamburger {
-    display: none;
+button.hamburger {
+    display: inline-block;
 }
 
 /* ---------footer--------- */
