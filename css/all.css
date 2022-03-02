@@ -75,9 +75,9 @@ header nav ul li a:hover{
     transform-origin: 50% 50%;
 }
 
-button.hamburger {
+/* header .hamburger {
     display: none;
-}
+} */
 
 /* ---------footer--------- */
 footer{
@@ -270,7 +270,7 @@ footer{
         flex: 1 0 calc(100% / 6);
     }
 
-    button.hamburger {
+    header .hamburger {
         display: inline-block;
         /* border: 1px solid red; */
     }
@@ -328,4 +328,10 @@ footer{
         font-size: 30%;
     }
 
+}
+
+@media (min-width: 576px){
+    header .hamburger {
+        display: none;
+    }
 }
