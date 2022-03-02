@@ -76,7 +76,7 @@ header nav ul li a:hover{
 }
 
 button.hamburger {
-    display: inline-block;
+    display: none;
 }
 
 /* ---------footer--------- */
@@ -270,7 +270,7 @@ footer{
         flex: 1 0 calc(100% / 6);
     }
 
-    .hamburger {
+    button.hamburger {
         display: inline-block;
         /* border: 1px solid red; */
     }
